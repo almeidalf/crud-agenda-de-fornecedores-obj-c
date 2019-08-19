@@ -1,4 +1,4 @@
-# Crud-Cadastro-de-Fornecedores-Obj-c
+# Crud-Agenda-de-Fornecedores-Obj-c
 Projeto de estudo sobre a linguagem Obj-c
 
 ----
