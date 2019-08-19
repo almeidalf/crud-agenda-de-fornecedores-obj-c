@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ListaDeFornecedoresVC.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    //MARK: Instanciando ListaDeFornecedores para virar tela inicial
+    ListaDeFornecedoresVC *lista = [ListaDeFornecedoresVC new];
+    
+    //MARK: Criando um navigationController
+    UINavigationController *navLista = [[UINavigationController alloc]
+                                        initWithRootViewController:lista];
+    
+    self.window.rootViewController = navLista;
+    
     return YES;
 }
 

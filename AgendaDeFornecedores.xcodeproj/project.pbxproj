@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		201930D423088FCD00BFBDA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 201930D323088FCD00BFBDA3 /* AppDelegate.m */; };
-		201930D723088FCD00BFBDA3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 201930D623088FCD00BFBDA3 /* ViewController.m */; };
 		201930DA23088FCD00BFBDA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 201930D823088FCD00BFBDA3 /* Main.storyboard */; };
 		201930DD23088FCD00BFBDA3 /* AgendaDeFornecedores.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 201930DB23088FCD00BFBDA3 /* AgendaDeFornecedores.xcdatamodeld */; };
 		201930DF23088FCE00BFBDA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 201930DE23088FCE00BFBDA3 /* Assets.xcassets */; };
 		201930E223088FCE00BFBDA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 201930E023088FCE00BFBDA3 /* LaunchScreen.storyboard */; };
 		201930E523088FCE00BFBDA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 201930E423088FCE00BFBDA3 /* main.m */; };
 		201930EF23088FCE00BFBDA3 /* AgendaDeFornecedoresTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 201930EE23088FCE00BFBDA3 /* AgendaDeFornecedoresTests.m */; };
+		201931032308A74800BFBDA3 /* Fornecedores.m in Sources */ = {isa = PBXBuildFile; fileRef = 201931022308A74800BFBDA3 /* Fornecedores.m */; };
+		201931072308A9CB00BFBDA3 /* ListaDeFornecedoresVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 201931062308A9CB00BFBDA3 /* ListaDeFornecedoresVC.m */; };
+		2019310C2308F2E800BFBDA3 /* FormularioFornecedoresVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2019310B2308F2E800BFBDA3 /* FormularioFornecedoresVC.m */; };
+		20F1EE722309F363005B0E7A /* FornecedorDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F1EE712309F363005B0E7A /* FornecedorDAO.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +34,6 @@
 		201930CF23088FCD00BFBDA3 /* AgendaDeFornecedores.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgendaDeFornecedores.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		201930D223088FCD00BFBDA3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		201930D323088FCD00BFBDA3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		201930D523088FCD00BFBDA3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		201930D623088FCD00BFBDA3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		201930D923088FCD00BFBDA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		201930DC23088FCD00BFBDA3 /* AgendaDeFornecedores.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AgendaDeFornecedores.xcdatamodel; sourceTree = "<group>"; };
 		201930DE23088FCE00BFBDA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -42,6 +43,14 @@
 		201930EA23088FCE00BFBDA3 /* AgendaDeFornecedoresTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgendaDeFornecedoresTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		201930EE23088FCE00BFBDA3 /* AgendaDeFornecedoresTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AgendaDeFornecedoresTests.m; sourceTree = "<group>"; };
 		201930F023088FCE00BFBDA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		201931012308A74800BFBDA3 /* Fornecedores.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fornecedores.h; sourceTree = "<group>"; };
+		201931022308A74800BFBDA3 /* Fornecedores.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fornecedores.m; sourceTree = "<group>"; };
+		201931052308A9CB00BFBDA3 /* ListaDeFornecedoresVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListaDeFornecedoresVC.h; sourceTree = "<group>"; };
+		201931062308A9CB00BFBDA3 /* ListaDeFornecedoresVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListaDeFornecedoresVC.m; sourceTree = "<group>"; };
+		2019310A2308F2E800BFBDA3 /* FormularioFornecedoresVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormularioFornecedoresVC.h; sourceTree = "<group>"; };
+		2019310B2308F2E800BFBDA3 /* FormularioFornecedoresVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FormularioFornecedoresVC.m; sourceTree = "<group>"; };
+		20F1EE702309F363005B0E7A /* FornecedorDAO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FornecedorDAO.h; sourceTree = "<group>"; };
+		20F1EE712309F363005B0E7A /* FornecedorDAO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FornecedorDAO.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +92,11 @@
 		201930D123088FCD00BFBDA3 /* AgendaDeFornecedores */ = {
 			isa = PBXGroup;
 			children = (
-				201930D223088FCD00BFBDA3 /* AppDelegate.h */,
-				201930D323088FCD00BFBDA3 /* AppDelegate.m */,
-				201930D523088FCD00BFBDA3 /* ViewController.h */,
-				201930D623088FCD00BFBDA3 /* ViewController.m */,
-				201930D823088FCD00BFBDA3 /* Main.storyboard */,
+				20F1EE6F2309F34D005B0E7A /* DAO */,
+				201931092308F27600BFBDA3 /* Application */,
+				201931082308F23B00BFBDA3 /* Storyboard */,
+				201931042308A9AD00BFBDA3 /* ViewController */,
+				201931002308A73300BFBDA3 /* Classe */,
 				201930DE23088FCE00BFBDA3 /* Assets.xcassets */,
 				201930E023088FCE00BFBDA3 /* LaunchScreen.storyboard */,
 				201930E323088FCE00BFBDA3 /* Info.plist */,
@@ -104,6 +113,52 @@
 				201930F023088FCE00BFBDA3 /* Info.plist */,
 			);
 			path = AgendaDeFornecedoresTests;
+			sourceTree = "<group>";
+		};
+		201931002308A73300BFBDA3 /* Classe */ = {
+			isa = PBXGroup;
+			children = (
+				201931012308A74800BFBDA3 /* Fornecedores.h */,
+				201931022308A74800BFBDA3 /* Fornecedores.m */,
+			);
+			path = Classe;
+			sourceTree = "<group>";
+		};
+		201931042308A9AD00BFBDA3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				201931052308A9CB00BFBDA3 /* ListaDeFornecedoresVC.h */,
+				201931062308A9CB00BFBDA3 /* ListaDeFornecedoresVC.m */,
+				2019310A2308F2E800BFBDA3 /* FormularioFornecedoresVC.h */,
+				2019310B2308F2E800BFBDA3 /* FormularioFornecedoresVC.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		201931082308F23B00BFBDA3 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				201930D823088FCD00BFBDA3 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		201931092308F27600BFBDA3 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				201930D223088FCD00BFBDA3 /* AppDelegate.h */,
+				201930D323088FCD00BFBDA3 /* AppDelegate.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		20F1EE6F2309F34D005B0E7A /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				20F1EE702309F363005B0E7A /* FornecedorDAO.h */,
+				20F1EE712309F363005B0E7A /* FornecedorDAO.m */,
+			);
+			path = DAO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,10 +261,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				201930D723088FCD00BFBDA3 /* ViewController.m in Sources */,
+				201931032308A74800BFBDA3 /* Fornecedores.m in Sources */,
 				201930D423088FCD00BFBDA3 /* AppDelegate.m in Sources */,
 				201930E523088FCE00BFBDA3 /* main.m in Sources */,
+				201931072308A9CB00BFBDA3 /* ListaDeFornecedoresVC.m in Sources */,
 				201930DD23088FCD00BFBDA3 /* AgendaDeFornecedores.xcdatamodeld in Sources */,
+				2019310C2308F2E800BFBDA3 /* FormularioFornecedoresVC.m in Sources */,
+				20F1EE722309F363005B0E7A /* FornecedorDAO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,7 +426,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5SVK23PTZE;
 				INFOPLIST_FILE = AgendaDeFornecedores/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -384,7 +444,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5SVK23PTZE;
 				INFOPLIST_FILE = AgendaDeFornecedores/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
