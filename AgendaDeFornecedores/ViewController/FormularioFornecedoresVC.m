@@ -53,11 +53,14 @@
     NSLog(@"%@", self.dao.fornecedores);
     
     [self.navigationController popViewControllerAnimated:YES];
+    
+    [self.delegate fornecedorAdicionado: self.fornec];
 }
 
 //MARK: Alterar fornecedor das infos....
 -(void) altera{
     [self pegaDadosFormulario];
+    [self.delegate fornecedorAtualizado: self.fornec];
     [self.navigationController popViewControllerAnimated:YES];
 }
 

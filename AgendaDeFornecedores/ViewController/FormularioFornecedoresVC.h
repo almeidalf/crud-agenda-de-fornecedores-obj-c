@@ -9,6 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "FornecedorDao.h"
 
+@protocol FormularioFornecedoresDelegate <NSObject>
+
+@required
+-(void) fornecedorAdicionado: (Fornecedores *) fornecedor;
+-(void) fornecedorAtualizado: (Fornecedores *) fornecedor;
+
+@end
+
 @interface FormularioFornecedoresVC : UIViewController
 
 @property IBOutlet UITextField *fornecedor;
@@ -19,5 +27,7 @@
 
 @property FornecedorDAO *dao;
 @property Fornecedores *fornec;
+
+@property id<FormularioFornecedoresDelegate> delegate;
 
 @end

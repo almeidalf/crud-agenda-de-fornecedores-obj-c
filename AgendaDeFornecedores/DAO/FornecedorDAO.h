@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(void) adicionaFornecedor: (Fornecedores *) fornecedor;
 -(NSInteger) total;
 -(Fornecedores *) indiceDoFornecedor: (NSInteger) indice;
+-(NSInteger) indiceSelecionadoDoFornecedor: (Fornecedores *) fornecedor;
 +(FornecedorDAO *) fornecedorDAOInstance;
 -(void) removeFornecedor: (Fornecedores *) fornecedor;
 

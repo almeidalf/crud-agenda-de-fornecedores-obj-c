@@ -42,4 +42,8 @@ static FornecedorDAO *defaultDao = nil;
 - (void)removeFornecedor:(Fornecedores *)fornecedor {
     [self.fornecedores removeObject:fornecedor];
 }
+
+-(NSInteger)indiceSelecionadoDoFornecedor:(Fornecedores *)fornecedor{
+    return [self.fornecedores indexOfObject:fornecedor];
+}
 @end

@@ -7,13 +7,18 @@
 //
 
 #import "ListaDeFornecedoresVC.h"
-#import "FormularioFornecedoresVC.h"
 #import "Fornecedores.h"
 
 @implementation ListaDeFornecedoresVC
 
 -(void)viewWillAppear:(BOOL)animated{
     [self.tableView reloadData];
+}
+-(void)viewDidAppear:(BOOL)animated{
+    //MARK: Mostra qual linha foi adicionada ou atualizada de fornecedor.....
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:self.linhaSelecionada inSection:0];
+    [self.tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionNone];
+    self.linhaSelecionada = -1;
 }
 
 -(ListaDeFornecedoresVC *) init {
@@ -27,6 +32,7 @@
     self.navigationItem.title = @"Lista de Fornecedores";
         
         self.navigationItem.leftBarButtonItem = self.editButtonItem;
+        self.linhaSelecionada = -1 ;
         self.dao = [FornecedorDAO fornecedorDAOInstance];
     }
     return self;
@@ -36,6 +42,7 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName: @"Main" bundle:nil];
     
     FormularioFornecedoresVC *formularioFornecedor = [storyboard instantiateViewControllerWithIdentifier:@"Formulario-Fornecedor"];
+    formularioFornecedor.delegate = self;
     if(self.fornecedorSelecionado){
         formularioFornecedor.fornec = self.fornecedorSelecionado;
     }
@@ -76,6 +83,22 @@
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     self.fornecedorSelecionado = [self.dao indiceDoFornecedor:indexPath.row];
     [self mostrarFormulario];
-    
 }
+
+-(void) fornecedorAdicionado: (Fornecedores *) fornecedor{
+    NSString *mensagem = [NSString stringWithFormat:@"Fornecedor %@ adicionado com sucesso!", fornecedor.nome_Fornecedor];
+    self.linhaSelecionada = [self.dao indiceSelecionadoDoFornecedor:fornecedor];
+    UIAlertController *alerta = [UIAlertController
+                                 alertControllerWithTitle:@"Obrigado!" message:mensagem
+                                 preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleCancel handler:nil];
+    [alerta addAction:ok];
+    [self presentViewController:alerta animated:YES completion:nil];
+}
+
+-(void) fornecedorAtualizado: (Fornecedores *) fornecedor{
+    self.linhaSelecionada = [self.dao indiceSelecionadoDoFornecedor:fornecedor];
+}
+
+
 @end

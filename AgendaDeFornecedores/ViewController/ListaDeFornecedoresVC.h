@@ -8,13 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "FornecedorDao.h"
+#import "FormularioFornecedoresVC.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ListaDeFornecedoresVC : UITableViewController
+@interface ListaDeFornecedoresVC : UITableViewController<FormularioFornecedoresDelegate>
 
 @property FornecedorDAO *dao;
 @property Fornecedores *fornecedorSelecionado;
+@property NSInteger linhaSelecionada;
 
 @end
 
