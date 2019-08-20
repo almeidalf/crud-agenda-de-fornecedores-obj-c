@@ -14,8 +14,8 @@ CRUD de fornecedores.
 - Exclusão de fornecedores.
 
 *Diferenciais realizados:
-- Ao alterar o fornecedor você verá ele selecionado na lista.
-- Ao cadastrar mensagem de cadastro aparecerá informando o nome do fornecedor inserido.
+- Ao alterar o fornecedor você verá o mesmo selecionado na lista do aplicativo.
+- Ao cadastrar fornecedor aparecerá uma mensagem informando que o mesmo foi cadastrado.
 
 
 Obrigado.
